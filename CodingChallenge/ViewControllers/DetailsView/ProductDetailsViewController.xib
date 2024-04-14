@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductDetailsViewController" customModule="CodingChallenge">
+            <connections>
+                <outlet property="detailsDescriptionLabel" destination="Osi-6j-Zjt" id="smV-kn-i3r"/>
+                <outlet property="detailsImageView" destination="3Fq-R9-FNQ" id="KgJ-N8-Npe"/>
+                <outlet property="detailsTitleLabel" destination="hA9-Ei-MNp" id="awD-pj-Bd5"/>
+                <outlet property="view" destination="6iA-TO-zAb" id="5da-Qq-r6c"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6iA-TO-zAb">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Fq-R9-FNQ">
+                    <rect key="frame" x="8" y="59" width="377" height="213"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA9-Ei-MNp">
+                    <rect key="frame" x="8" y="276" width="377" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osi-6j-Zjt">
+                    <rect key="frame" x="8" y="310" width="377" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tX-fq-P6l">
+                    <rect key="frame" x="141" y="763.66666666666663" width="111.33333333333331" height="34.333333333333371"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Add to Cart"/>
+                    <connections>
+                        <action selector="addToCartAction:" destination="-1" eventType="touchUpInside" id="RDr-l8-PJC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="3qX-XR-wOl"/>
+            <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Osi-6j-Zjt" firstAttribute="centerX" secondItem="3qX-XR-wOl" secondAttribute="centerX" id="4TI-eO-d39"/>
+                <constraint firstItem="1tX-fq-P6l" firstAttribute="centerX" secondItem="3qX-XR-wOl" secondAttribute="centerX" id="Ja2-y6-3Gh"/>
+                <constraint firstItem="Osi-6j-Zjt" firstAttribute="top" secondItem="hA9-Ei-MNp" secondAttribute="bottom" constant="10" id="LpD-yO-HYE"/>
+                <constraint firstItem="hA9-Ei-MNp" firstAttribute="centerX" secondItem="3qX-XR-wOl" secondAttribute="centerX" id="X9l-ex-hIL"/>
+                <constraint firstItem="3Fq-R9-FNQ" firstAttribute="height" secondItem="6iA-TO-zAb" secondAttribute="height" multiplier="0.25" id="acF-WQ-yI8"/>
+                <constraint firstItem="Osi-6j-Zjt" firstAttribute="leading" secondItem="3qX-XR-wOl" secondAttribute="leading" constant="8" id="ajA-I3-gC1"/>
+                <constraint firstItem="3qX-XR-wOl" firstAttribute="trailing" secondItem="3Fq-R9-FNQ" secondAttribute="trailing" constant="8" id="cjg-Uq-9RN"/>
+                <constraint firstItem="3qX-XR-wOl" firstAttribute="trailing" secondItem="Osi-6j-Zjt" secondAttribute="trailing" constant="8" id="eT0-Ln-SZK"/>
+                <constraint firstItem="3Fq-R9-FNQ" firstAttribute="leading" secondItem="3qX-XR-wOl" secondAttribute="leading" constant="8" id="hvv-Fd-9e3"/>
+                <constraint firstItem="3qX-XR-wOl" firstAttribute="trailing" secondItem="hA9-Ei-MNp" secondAttribute="trailing" constant="8" id="igU-dP-yyH"/>
+                <constraint firstItem="hA9-Ei-MNp" firstAttribute="top" secondItem="3Fq-R9-FNQ" secondAttribute="bottom" constant="4" id="mas-oP-34c"/>
+                <constraint firstItem="hA9-Ei-MNp" firstAttribute="leading" secondItem="3qX-XR-wOl" secondAttribute="leading" constant="8" id="r5n-db-enP"/>
+                <constraint firstItem="3Fq-R9-FNQ" firstAttribute="top" secondItem="3qX-XR-wOl" secondAttribute="top" id="rZ8-63-rA7"/>
+                <constraint firstItem="3qX-XR-wOl" firstAttribute="bottom" secondItem="1tX-fq-P6l" secondAttribute="bottom" constant="20" id="zLS-IJ-e1e"/>
+            </constraints>
+            <point key="canvasLocation" x="-288" y="-658"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
